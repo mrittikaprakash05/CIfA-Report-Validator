@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>UK Arch Validator</h1>
+        <p>CIfA & Historic England Standards</p>
+    </div>
+
+    <div class="input-area">
+        <textarea id="reportInput" placeholder="Paste your report text (Introduction, Summary, or full text) here..."></textarea>
+        <button id="checkBtn">Validate Report</button>
+    </div>
+
+    <div id="results" class="hidden">
+        <h3>Compliance Report</h3>
+        
+        <div class="check-item" id="oasisCheck">
+            <span class="icon">❓</span> OASIS ID
+        </div>
+        
+        <div class="check-item" id="ngrCheck">
+            <span class="icon">❓</span> National Grid Ref (NGR)
+        </div>
+
+        <div class="check-item" id="summaryCheck">
+            <span class="icon">❓</span> Non-technical Summary
+        </div>
+
+        <div class="check-item" id="methodCheck">
+            <span class="icon">❓</span> Methodology Section
+        </div>
+
+        <div class="check-item" id="biblioCheck">
+            <span class="icon">❓</span> Bibliography/References
+        </div>
+
+        <div class="stats">
+            <p>Word Count: <span id="wordCount">0</span></p>
+            <p>CIfA Keywords Found: <span id="keywordCount">0</span></p>
+        </div>
+        
+        <div id="feedback" class="feedback-box"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

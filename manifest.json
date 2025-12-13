@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "CIfA Report Validator (UK)",
+  "version": "1.0",
+  "description": "Checks archaeological reports against UK CIfA and OASIS standards.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
